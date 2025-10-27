@@ -30,6 +30,7 @@ while angle < 360:
     rotated = []
     for (x, y) in triangle:
         # Convert angle to radians for math.sin/math.cos
+        # (In the degrees system, there are 360 degrees around a circle. The radians system is a differerent way of specifying angles in which there are 2 x pi radians around a circle.)
         rad = math.radians(angle)
         new_x = x * math.cos(rad) - y * math.sin(rad)
         new_y = x * math.sin(rad) + y * math.cos(rad)
